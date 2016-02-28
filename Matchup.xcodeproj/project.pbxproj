@@ -14,6 +14,8 @@
 		FE0F0D3A1C8270C900C8DC0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE0F0D381C8270C900C8DC0B /* LaunchScreen.storyboard */; };
 		FE0F0D451C8270CA00C8DC0B /* MatchupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0F0D441C8270CA00C8DC0B /* MatchupTests.swift */; };
 		FE0F0D501C8270CA00C8DC0B /* MatchupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0F0D4F1C8270CA00C8DC0B /* MatchupUITests.swift */; };
+		FE0F0D5E1C827BC300C8DC0B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0F0D5D1C827BC300C8DC0B /* LoginVC.swift */; };
+		FE0F0D601C827DE800C8DC0B /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0F0D5F1C827DE800C8DC0B /* SignupVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		FE0F0D4B1C8270CA00C8DC0B /* MatchupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatchupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE0F0D4F1C8270CA00C8DC0B /* MatchupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchupUITests.swift; sourceTree = "<group>"; };
 		FE0F0D511C8270CA00C8DC0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE0F0D5D1C827BC300C8DC0B /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		FE0F0D5F1C827DE800C8DC0B /* SignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				FE0F0D361C8270C900C8DC0B /* Assets.xcassets */,
 				FE0F0D381C8270C900C8DC0B /* LaunchScreen.storyboard */,
 				FE0F0D3B1C8270C900C8DC0B /* Info.plist */,
+				FE0F0D5D1C827BC300C8DC0B /* LoginVC.swift */,
+				FE0F0D5F1C827DE800C8DC0B /* SignupVC.swift */,
 			);
 			path = Matchup;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 				TargetAttributes = {
 					FE0F0D2B1C8270C800C8DC0B = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 2GKR59BE27;
 					};
 					FE0F0D3F1C8270CA00C8DC0B = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -256,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE0F0D601C827DE800C8DC0B /* SignupVC.swift in Sources */,
 				FE0F0D321C8270C900C8DC0B /* ViewController.swift in Sources */,
 				FE0F0D301C8270C900C8DC0B /* AppDelegate.swift in Sources */,
+				FE0F0D5E1C827BC300C8DC0B /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +413,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rass.Matchup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -416,6 +426,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rass.Matchup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -486,6 +497,7 @@
 				FE0F0D561C8270CA00C8DC0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE0F0D571C8270CA00C8DC0B /* Build configuration list for PBXNativeTarget "MatchupTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +506,7 @@
 				FE0F0D591C8270CA00C8DC0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE0F0D5A1C8270CA00C8DC0B /* Build configuration list for PBXNativeTarget "MatchupUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +515,7 @@
 				FE0F0D5C1C8270CA00C8DC0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
