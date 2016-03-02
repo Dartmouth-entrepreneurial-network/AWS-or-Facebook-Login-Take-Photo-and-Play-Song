@@ -32,6 +32,9 @@ class ViewController: UIViewController {
 
 
     @IBAction func logoutTapped(sender: UIButton) {
+        
+        NSUserDefaults.standardUserDefaults().setBool(false,forKey:"isUserLoggedIn");
+        NSUserDefaults.standardUserDefaults().synchronize();
         self.performSegueWithIdentifier("goto_login", sender: self)
     }
 }
