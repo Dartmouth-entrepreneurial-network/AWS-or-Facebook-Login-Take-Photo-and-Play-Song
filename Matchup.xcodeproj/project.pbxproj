@@ -14,8 +14,8 @@
 		FE0F0D3A1C8270C900C8DC0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE0F0D381C8270C900C8DC0B /* LaunchScreen.storyboard */; };
 		FE0F0D451C8270CA00C8DC0B /* MatchupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0F0D441C8270CA00C8DC0B /* MatchupTests.swift */; };
 		FE0F0D501C8270CA00C8DC0B /* MatchupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0F0D4F1C8270CA00C8DC0B /* MatchupUITests.swift */; };
-		FE0F0D5E1C827BC300C8DC0B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0F0D5D1C827BC300C8DC0B /* LoginVC.swift */; };
 		FE0F0D601C827DE800C8DC0B /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0F0D5F1C827DE800C8DC0B /* SignupVC.swift */; };
+		FE599BF41C86753D00397DB0 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE599BF31C86753D00397DB0 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +49,8 @@
 		FE0F0D4B1C8270CA00C8DC0B /* MatchupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatchupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE0F0D4F1C8270CA00C8DC0B /* MatchupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchupUITests.swift; sourceTree = "<group>"; };
 		FE0F0D511C8270CA00C8DC0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE0F0D5D1C827BC300C8DC0B /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		FE0F0D5F1C827DE800C8DC0B /* SignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		FE599BF31C86753D00397DB0 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +107,8 @@
 				FE0F0D361C8270C900C8DC0B /* Assets.xcassets */,
 				FE0F0D381C8270C900C8DC0B /* LaunchScreen.storyboard */,
 				FE0F0D3B1C8270C900C8DC0B /* Info.plist */,
-				FE0F0D5D1C827BC300C8DC0B /* LoginVC.swift */,
 				FE0F0D5F1C827DE800C8DC0B /* SignupVC.swift */,
+				FE599BF31C86753D00397DB0 /* LoginVC.swift */,
 			);
 			path = Matchup;
 			sourceTree = "<group>";
@@ -265,8 +265,8 @@
 			files = (
 				FE0F0D601C827DE800C8DC0B /* SignupVC.swift in Sources */,
 				FE0F0D321C8270C900C8DC0B /* ViewController.swift in Sources */,
+				FE599BF41C86753D00397DB0 /* LoginVC.swift in Sources */,
 				FE0F0D301C8270C900C8DC0B /* AppDelegate.swift in Sources */,
-				FE0F0D5E1C827BC300C8DC0B /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

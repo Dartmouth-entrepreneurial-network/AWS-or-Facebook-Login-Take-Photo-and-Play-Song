@@ -10,9 +10,6 @@ import UIKit
 
 class LoginVC: UIViewController {
 
-    @IBOutlet weak var txtEmail: UITextField!
-    @IBOutlet weak var txtPassword: UITextField!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,24 +21,6 @@ class LoginVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func signinTapped(sender: AnyObject) {
-        let userEmail = txtEmail.text;
-        let userPassword = txtPassword.text;
-        
-        let userEmailStored = NSUserDefaults.standardUserDefaults().stringForKey("userEmail");
-        let userPasswordStored = NSUserDefaults.standardUserDefaults().stringForKey("userPassword");
-        
-        if (userEmail == userEmailStored)
-        {
-            if (userPassword == userPasswordStored)
-            {
-                NSUserDefaults.standardUserDefaults().setBool(true, forKey:"isUserLoggedIn");
-                NSUserDefaults.standardUserDefaults().synchronize();
-                
-                self.dismissViewControllerAnimated(true, completion: nil)
-            }
-        }
-    }
 
     /*
     // MARK: - Navigation
