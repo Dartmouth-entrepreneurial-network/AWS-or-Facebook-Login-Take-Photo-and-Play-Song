@@ -5,7 +5,7 @@
 //  Created by Randall Reynolds on 2/27/16.
 //  Copyright © 2016 Randall Andrew Sam Sam. All rights reserved.
 //
-
+import AWSCore
 import UIKit
 
 @UIApplicationMain
@@ -16,6 +16,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //AWS default service configuration
+        let credentialsProvider = AWSCognitoCredentialsProvider(regionType: AWSRegionType.USEast1, identityPoolId: "us-east-1:8ba306b8-9edb-441b-881b-3be159e82a44")
+        //other parameters that may be added into AWSCognitoCredentialsProvider
+        //accountId: "098342329016"
+        //unauthRoleArn: "arn:aws:iam::098342329016:role/Cognito_MatchupUnauth_Role", authRoleArn: "arn:aws:iam:098342329016:role/Cognito_MatchupAuth_Role"
+        
+        let defaultServiceConfiguration = AWSServiceConfiguration(
+            region: AWSRegionType.USEast1, credentialsProvider: credentialsProvider)
+        
+        AWSServiceManager.defaultServiceManager().defaultServiceConfiguration = defaultServiceConfiguration
+        
+        // Initialize the Cognito Sync client
+        let syncClient = AWSCognito.defaultCognito()
+        
+        // Create a record in a dataset and synchronize with the server
+        let dataset = syncClient.openOrCreateDataset("myDataset3")
+        dataset.setString("password", forKey:"email")
+        dataset.synchronize().continueWithBlock {(task: AWSTask!) -> AnyObject! in
+            // Your handler code here
+            return nil
+            
+        }
+    
         return true
     }
 

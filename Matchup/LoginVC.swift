@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AWSCore
 
 class LoginVC: UIViewController {
 
