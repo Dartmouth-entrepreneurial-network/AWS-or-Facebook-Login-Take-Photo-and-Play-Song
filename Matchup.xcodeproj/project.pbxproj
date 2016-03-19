@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		833AD27ADB801165B903202E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8821684F02F44D6604592A1E /* libPods.a */; };
 		A9720E461C99F66E00049DC9 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A9720E451C99F66E00049DC9 /* libsqlite3.tbd */; };
 		A9720E481C99F67600049DC9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A9720E471C99F67600049DC9 /* libz.tbd */; };
 		A9720E4A1C99F68300049DC9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9720E491C99F68300049DC9 /* SystemConfiguration.framework */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8821684F02F44D6604592A1E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9720E451C99F66E00049DC9 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		A9720E471C99F67600049DC9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		A9720E491C99F68300049DC9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -70,6 +72,7 @@
 				A9720E4A1C99F68300049DC9 /* SystemConfiguration.framework in Frameworks */,
 				A9720E481C99F67600049DC9 /* libz.tbd in Frameworks */,
 				A9720E461C99F66E00049DC9 /* libsqlite3.tbd in Frameworks */,
+				833AD27ADB801165B903202E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +108,7 @@
 				A9720E491C99F68300049DC9 /* SystemConfiguration.framework */,
 				A9720E471C99F67600049DC9 /* libz.tbd */,
 				A9720E451C99F66E00049DC9 /* libsqlite3.tbd */,
+				8821684F02F44D6604592A1E /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

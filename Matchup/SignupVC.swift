@@ -6,7 +6,7 @@
 //  Copyright © 2016 Randall Andrew Sam Sam. All rights reserved.
 //
 
-import AWSCore
+//import AWSCore
 import UIKit
 
 class SignupVC: UIViewController {

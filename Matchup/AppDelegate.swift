@@ -5,7 +5,7 @@
 //  Created by Randall Reynolds on 2/27/16.
 //  Copyright © 2016 Randall Andrew Sam Sam. All rights reserved.
 //
-import AWSCore
+//import AWSCore
 import UIKit
 
 @UIApplicationMain
@@ -28,18 +28,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         AWSServiceManager.defaultServiceManager().defaultServiceConfiguration = defaultServiceConfiguration
         
-        // Initialize the Cognito Sync client
-        let syncClient = AWSCognito.defaultCognito()
-        
-        // Create a record in a dataset and synchronize with the server
-        let dataset = syncClient.openOrCreateDataset("myDataset3")
-        dataset.setString("password", forKey:"email")
-        dataset.synchronize().continueWithBlock {(task: AWSTask!) -> AnyObject! in
-            // Your handler code here
-            return nil
-            
-        }
-    
         return true
     }
 

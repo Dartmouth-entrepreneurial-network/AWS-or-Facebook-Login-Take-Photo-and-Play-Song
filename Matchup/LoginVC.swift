@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AWSCore
+//import AWSCore
 
 class LoginVC: UIViewController {
 
@@ -29,11 +29,19 @@ class LoginVC: UIViewController {
         let userEmail = txtEmail.text;
         let userPassword = txtPassword.text;
         
-        let userEmailStored = NSUserDefaults.standardUserDefaults().stringForKey("userEmail");
-        let userPasswordStored = NSUserDefaults.standardUserDefaults().stringForKey("userPassword");
+        let syncClient = AWSCognito.defaultCognito()
+        let dataset = syncClient.openOrCreateDataset("Users")
+        //dataset.synchronize()
+        let records = dataset.getAll()
+        let keys = records.keys;
         
-        if (userEmail == userEmailStored)
-        {
+        let isUser  = keys.contains(userEmail!);
+        
+        
+        //if (record,, in records) {
+        if (isUser) {
+            let userPasswordStored = dataset.stringForKey(userEmail!)
+            
             if (userPassword == userPasswordStored)
             {
                 NSUserDefaults.standardUserDefaults().setBool(true, forKey:"isUserLoggedIn");
@@ -42,6 +50,8 @@ class LoginVC: UIViewController {
                 self.dismissViewControllerAnimated(true, completion: nil)
             }
         }
+        //}
+
     }
 
     /*
