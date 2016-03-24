@@ -503,6 +503,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(SRCROOT)/**",
+					/Users/samuelputnam/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = Matchup/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -523,6 +524,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(SRCROOT)/**",
+					/Users/samuelputnam/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = Matchup/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -8,6 +8,9 @@
 
 #import <AWSCore/AWSCore.h>
 #import <AWSCognito/AWSCognito.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <Bolts/Bolts.h>
 
 #ifndef Matchup_Bridging_Header_h
 #define Matchup_Bridging_Header_h
