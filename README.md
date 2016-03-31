@@ -17,10 +17,15 @@ USEast (N. Virginia) region
 Podfile
 
 source 'https://github.com/CocoaPods/Specs.git'
+
 pod 'AWSCognito'
+
 pod 'FBSDKCoreKit'
+
 pod 'FBSDKLoginKit'
+
 pod 'Bolts
+
 pod 'AWSCore'
 
 Get started with the Facebook SDK:
