@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Matchup.xcodeproj">
+      location = "self:generic.xcodeproj">
    </FileRef>
 </Workspace>
