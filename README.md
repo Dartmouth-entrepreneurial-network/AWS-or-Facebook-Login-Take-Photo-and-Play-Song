@@ -12,20 +12,6 @@ iOS Simulator: iPhone 6
 
 USEast (N. Virginia) region
 
-Podfile
-
-source 'https://github.com/CocoaPods/Specs.git'
-
-pod 'AWSCognito'
-
-pod 'FBSDKCoreKit'
-
-pod 'FBSDKLoginKit'
-
-pod 'Bolts
-
-pod 'AWSCore'
-
 pod install
 
 Get started with the Facebook SDK:
