@@ -14,7 +14,7 @@
     <key>FacebookAppID</key>
     <string>{1572164833099000}</string>
     <key>FacebookDisplayName</key>
-    <string>{Matchup}</string>
+    <string>{generic}</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>NSAppTransportSecurity</key>
