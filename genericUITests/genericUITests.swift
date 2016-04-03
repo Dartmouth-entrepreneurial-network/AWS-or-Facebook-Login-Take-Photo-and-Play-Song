@@ -1,6 +1,6 @@
 //
-//  MatchupUITests.swift
-//  MatchupUITests
+//  genericUITests.swift
+//  genericUITests
 //
 //  Created by Randall Reynolds on 2/27/16.
 //  Copyright © 2016 Randall Andrew Sam Sam. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class MatchupUITests: XCTestCase {
+class genericUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
