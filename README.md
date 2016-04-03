@@ -14,6 +14,8 @@ USEast (N. Virginia) region
 
 pod install
 
+open generic.xcworkspace
+
 Get started with the Facebook SDK:
 https://developers.facebook.com/docs/ios/getting-started/
 
