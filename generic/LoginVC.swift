@@ -1,6 +1,6 @@
 //
 //  LoginVC.swift
-//  Matchup
+//  generic
 //
 //  Created by Randall Reynolds on 3/1/16.
 //  Copyright © 2016 Randall Andrew Sam Sam. All rights reserved.
