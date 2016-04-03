@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  Matchup
+//  generic
 //
-//  Created by Randall Reynolds on 2/27/16.
+//  Created on 2/27/16.
 //  Copyright © 2016 Randall Andrew Sam Sam. All rights reserved.
 //
 
