@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FE0F0D2B1C8270C800C8DC0B"
-               BuildableName = "Matchup.app"
-               BlueprintName = "Matchup"
-               ReferencedContainer = "container:Matchup.xcodeproj">
+               BuildableName = "generic.app"
+               BlueprintName = "generic"
+               ReferencedContainer = "container:generic.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FE0F0D3F1C8270CA00C8DC0B"
-               BuildableName = "MatchupTests.xctest"
-               BlueprintName = "MatchupTests"
-               ReferencedContainer = "container:Matchup.xcodeproj">
+               BuildableName = "genericTests.xctest"
+               BlueprintName = "genericTests"
+               ReferencedContainer = "container:generic.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FE0F0D4A1C8270CA00C8DC0B"
-               BuildableName = "MatchupUITests.xctest"
-               BlueprintName = "MatchupUITests"
-               ReferencedContainer = "container:Matchup.xcodeproj">
+               BuildableName = "genericUITests.xctest"
+               BlueprintName = "genericUITests"
+               ReferencedContainer = "container:generic.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FE0F0D2B1C8270C800C8DC0B"
-            BuildableName = "Matchup.app"
-            BlueprintName = "Matchup"
-            ReferencedContainer = "container:Matchup.xcodeproj">
+            BuildableName = "generic.app"
+            BlueprintName = "generic"
+            ReferencedContainer = "container:generic.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FE0F0D2B1C8270C800C8DC0B"
-            BuildableName = "Matchup.app"
-            BlueprintName = "Matchup"
-            ReferencedContainer = "container:Matchup.xcodeproj">
+            BuildableName = "generic.app"
+            BlueprintName = "generic"
+            ReferencedContainer = "container:generic.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FE0F0D2B1C8270C800C8DC0B"
-            BuildableName = "Matchup.app"
-            BlueprintName = "Matchup"
-            ReferencedContainer = "container:Matchup.xcodeproj">
+            BuildableName = "generic.app"
+            BlueprintName = "generic"
+            ReferencedContainer = "container:generic.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
