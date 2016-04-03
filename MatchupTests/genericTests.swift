@@ -1,15 +1,15 @@
 //
-//  MatchupTests.swift
-//  MatchupTests
+//  genericTests.swift
+//  genericTests
 //
 //  Created by Randall Reynolds on 2/27/16.
 //  Copyright © 2016 Randall Andrew Sam Sam. All rights reserved.
 //
 
 import XCTest
-@testable import Matchup
+@testable import generic
 
-class MatchupTests: XCTestCase {
+class genericTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
