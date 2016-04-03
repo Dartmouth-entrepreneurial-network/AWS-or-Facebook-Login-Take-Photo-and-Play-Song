@@ -16,6 +16,9 @@ pod install
 
 open generic.xcworkspace
 
+Get started with the Amazon SDK:
+http://docs.aws.amazon.com/mobile/sdkforios/developerguide/
+
 Get started with the Facebook SDK:
 https://developers.facebook.com/docs/ios/getting-started/
 
