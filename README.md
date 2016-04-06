@@ -14,7 +14,7 @@ USEast (N. Virginia) region
 
 pod install
 
-open generic.xcworkspace
+Do open generic.xcworkspace
 
 Get started with the Amazon SDK:
 http://docs.aws.amazon.com/mobile/sdkforios/developerguide/
