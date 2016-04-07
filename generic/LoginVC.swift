@@ -19,6 +19,7 @@ class LoginVC: UIViewController, FBSDKLoginButtonDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        // a comment
         
         if (FBSDKAccessToken.currentAccessToken() != nil)
         {
