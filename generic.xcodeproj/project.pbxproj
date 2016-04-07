@@ -12,6 +12,7 @@
 		A9720E461C99F66E00049DC9 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A9720E451C99F66E00049DC9 /* libsqlite3.tbd */; };
 		A9720E481C99F67600049DC9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A9720E471C99F67600049DC9 /* libz.tbd */; };
 		A9720E4A1C99F68300049DC9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9720E491C99F68300049DC9 /* SystemConfiguration.framework */; };
+		E4E85B9270D3ECF6FC664B27 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA488F4C3918F16364E9392B /* libPods.a */; };
 		FE0F0D321C8270C900C8DC0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0F0D311C8270C900C8DC0B /* ViewController.swift */; };
 		FE0F0D351C8270C900C8DC0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE0F0D331C8270C900C8DC0B /* Main.storyboard */; };
 		FE0F0D371C8270C900C8DC0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0F0D361C8270C900C8DC0B /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		A9720E4B1C99F6B700049DC9 /* generic-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "generic-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		A9C51F6C3F1FD9E234347789 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B30F0EF7AB2DE63EE3009FC0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		BA488F4C3918F16364E9392B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE0F0D2C1C8270C900C8DC0B /* generic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = generic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE0F0D311C8270C900C8DC0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FE0F0D341C8270C900C8DC0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				A9720E4A1C99F68300049DC9 /* SystemConfiguration.framework in Frameworks */,
 				A9720E481C99F67600049DC9 /* libz.tbd in Frameworks */,
 				A9720E461C99F66E00049DC9 /* libsqlite3.tbd in Frameworks */,
+				E4E85B9270D3ECF6FC664B27 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +110,7 @@
 				A9720E491C99F68300049DC9 /* SystemConfiguration.framework */,
 				A9720E471C99F67600049DC9 /* libz.tbd */,
 				A9720E451C99F66E00049DC9 /* libsqlite3.tbd */,
+				BA488F4C3918F16364E9392B /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -504,7 +508,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(SRCROOT)/**",
-					/Users/samuelputnam/desktop/projects/local/sdks,
+					/Users/samuelputnam/desktop/projects/local/ios/ios_sdks,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/generic/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -527,7 +531,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(SRCROOT)/**",
-					/Users/samuelputnam/desktop/projects/local/sdks,
+					/Users/samuelputnam/desktop/projects/local/ios/ios_sdks,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/generic/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
