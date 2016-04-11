@@ -14,16 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
-    /* + (void)initialize
-     {
-     // Nib files require the type to have been loaded before they can do the wireup successfully.
-     // http://stackoverflow.com/questions/1725881/unknown-class-myclass-in-interface-builder-file-error-at-runtime
-     [FBSDKLoginButton class];
-     [FBSDKProfilePictureView class];
-     [FBSDKSendButton class];
-     [FBSDKShareButton class];
-     }*/
-    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         //App launch code
@@ -41,17 +31,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AWSServiceManager.defaultServiceManager().defaultServiceConfiguration = defaultServiceConfiguration
         
         
-        return true
+        return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
     
-    /* - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-     BOOL handled = [[FBSDKApplicationDelegate sharedInstance] application:application
-     openURL:url
-     sourceApplication:sourceApplication
-     annotation:annotation
-     ];
-     // Add any custom logic here.
-     return handled; */
     
     func application(application: UIApplication,
                      openURL url: NSURL,
@@ -89,64 +71,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
         FBSDKAppEvents.activateApp()
     }
-    
-    //Here's the facebook login code, have your login procedure call this:
-    
-    let facebookReadPermissions = ["public_profile", "email", "user_friends"]
-    
-    func loginToFacebookWithSuccess(successBlock: () -> (), andFailure failureBlock: (NSError?) -> ()) {
-        
-        if FBSDKAccessToken.currentAccessToken() != nil {
-            //For debugging, when we want to ensure that facebook login always happens
-            //FBSDKLoginManager().logOut()
-            //Otherwise do:
-            return
-        }
-        
-        FBSDKLoginManager().logInWithReadPermissions(self.facebookReadPermissions, handler: { (result:FBSDKLoginManagerLoginResult!, error:NSError!) -> Void in
-            if error != nil {
-                //According to Facebook:
-                //Errors will rarely occur in the typical login flow because the login dialog
-                //presented by Facebook via single sign on will guide the users to resolve any errors.
-                
-                // Process error
-                FBSDKLoginManager().logOut()
-                failureBlock(error)
-            } else if result.isCancelled {
-                // Handle cancellations
-                FBSDKLoginManager().logOut()
-                failureBlock(nil)
-            } else {
-                /*
-                // If you ask for multiple permissions at once, you
-                // should check if specific permissions missing
-                var allPermsGranted = true
-                //result.grantedPermissions returns an array of _NSCFString pointers
-                let grantedPermissions = result.grantedPermissions.map({"\($0)"})//.allObjects.map( {"\($0)"} )
-                for permission in self.facebookReadPermissions {
-                    if !contains(grantedPermissions, permission) {
-                        allPermsGranted = false
-                        break
-                    }
-                }
-                if allPermsGranted {
-                    // Do work
-                    let fbToken = result.token.tokenString
-                    let fbUserID = result.token.userID
-                    successBlock()
-                } else {
-                    //The user did not grant all permissions requested
-                    //Discover which permissions are granted
-                    //and if you can live without the declined ones
-                    failureBlock((nil))
-                }*/
-            }
-        })
-    
+ 
+
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
     
 }
-}
+

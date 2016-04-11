@@ -23,7 +23,7 @@ class LoginVC: UIViewController, FBSDKLoginButtonDelegate {
         
         if (FBSDKAccessToken.currentAccessToken() != nil)
         {
-            // User is already logged in, do work such as go to next view controller.
+            // User is already logged in, do work, such as go to next view controller.
         }
         else
         {
@@ -38,6 +38,7 @@ class LoginVC: UIViewController, FBSDKLoginButtonDelegate {
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
         if ((error) != nil) {
             // Process error
+            print(error.localizedDescription)
         }
         else if result.isCancelled {
             // Handle cancellations
@@ -48,13 +49,14 @@ class LoginVC: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
-        // Something to be written later
+        print("User Logged Out")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     @IBAction func signinTapped(sender: AnyObject) {
         let userEmail = txtEmail.text;
