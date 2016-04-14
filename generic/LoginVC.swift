@@ -70,6 +70,7 @@ class LoginVC: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     
+    
     @IBAction func LoginTapped(sender: AnyObject) {
         let userEmail = txtEmail.text;
         let userPassword = txtPassword.text;
