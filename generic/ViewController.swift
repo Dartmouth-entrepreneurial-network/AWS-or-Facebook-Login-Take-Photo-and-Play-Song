@@ -24,9 +24,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     imageFromSource.delegate = self
     imageFromSource.allowsEditing = false
     
-  
-      
-        
+
         
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera){
             
