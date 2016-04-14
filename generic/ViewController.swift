@@ -52,6 +52,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         alert.addButtonWithTitle("OK")
         alert.show()
     }
+    
     func UIColorFromRGB(rgbValue: UInt) -> UIColor {
         return UIColor(
             red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
@@ -60,6 +61,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             alpha: CGFloat(1.0)
         )
     }
+    
     func showAlertController() {
         
         let title = "Hello World!"
