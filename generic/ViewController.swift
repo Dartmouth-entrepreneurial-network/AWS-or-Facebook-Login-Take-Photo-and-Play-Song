@@ -8,8 +8,36 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
+    @IBOutlet var imageView : UIImageView!
+    @IBAction func captureImage(){
+    
+        var imageFromSource = UIImagePickerController()
+        imageFromSource.delegate = self
+        imageFromSource.allowsEditing = false
+        
+        
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera){
+            
+            imageFromSource.sourceType = UIImagePickerControllerSourceType.Camera
+            
+            
+        }
+        else {
+            imageFromSource.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        }
+        self.presentViewController(imageFromSource,animated: true, completion:nil)
+        
+        
+        
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        var temp : UIImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        imageView.image = temp
+        self.dismissViewControllerAnimated(true, completion: {})
+    }
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var loginButton: FBSDKLoginButton!
     

@@ -41,11 +41,22 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bM9-dn-PWk">
+                                <rect key="frame" x="41" y="216" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSq-65-q44">
+                                <rect key="frame" x="125" y="352" width="71" height="30"/>
+                                <state key="normal" title="Get Image"/>
+                                <connections>
+                                    <action selector="captureImage" destination="BYZ-38-t0r" eventType="touchUpInside" id="FzS-Yl-pK0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="CyB-SS-Pwl"/>
                     <connections>
+                        <outlet property="ImageView" destination="bM9-dn-PWk" id="W7N-jB-eNX"/>
                         <outlet property="usernameLabel" destination="eAq-of-jaa" id="Czp-hO-P9a"/>
                         <segue destination="0pF-Gl-NtH" kind="modal" identifier="goto_login" id="ejj-ZC-QyX"/>
                     </connections>

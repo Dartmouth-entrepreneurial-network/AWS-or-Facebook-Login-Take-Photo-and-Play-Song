@@ -23,28 +23,40 @@ class LoginVC: UIViewController, FBSDKLoginButtonDelegate {
         
         if (FBSDKAccessToken.currentAccessToken() != nil)
         {
+            print("not nil")
             // User is already logged in, do work, such as go to next view controller.
         }
         else
         {
-            let loginButton : FBSDKLoginButton = FBSDKLoginButton()
-            self.view.addSubview(loginButton)
-            loginButton.center = self.view.center
-            loginButton.readPermissions = ["public_profile", "email", "user_friends"]
-            loginButton.delegate = self
+        print("nil")
         }
+        print("here")
+        let loginButton : FBSDKLoginButton = FBSDKLoginButton()
+        print("here")
+            self.view.addSubview(loginButton)
+        print("here")
+            loginButton.center = self.view.center
+        print("here")
+            loginButton.readPermissions = ["public_profile", "email", "user_friends"]
+        print("here")
+            loginButton.delegate = self
+        print("here")
     }
     
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
-        if ((error) != nil) {
+        if (error == nil) {
             // Process error
-            print(error.localizedDescription)
+            
+            print("user is logged in")
+            self.dismissViewControllerAnimated(true, completion: nil)
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey:"isUserLoggedIn");
+            NSUserDefaults.standardUserDefaults().synchronize();
         }
-        else if result.isCancelled {
-            // Handle cancellations
-        }
+   
         else {
             // Navigate to other view
+            print("error")
+            print(error.localizedDescription)
         }
     }
     
