@@ -10,6 +10,7 @@
 import UIKit
 import AVFoundation
 
+
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     var helloButton: UIButton = UIButton (frame: CGRect(x: 0, y: 0, width: 300, height: 35))
     var helloButton2: UIButton = UIButton (frame: CGRect(x: 0, y: 0, width: 300, height: 35))
@@ -17,6 +18,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     var Player = AVAudioPlayer()
     var nowPlaying = false
     var timer:NSTimer!
+    
+
     
     var imageFromSource = UIImagePickerController()
     @IBOutlet var imageView : UIImageView!
@@ -100,7 +103,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     @IBOutlet weak var timeLabel: UILabel!
     
-    let musicPath = NSBundle.mainBundle().pathForResource("calm", ofType: "mp3")
+    let musicPath = NSBundle.mainBundle().pathForResource("calm song", ofType: "mp3")
   
     
     @IBAction func playAction(sender: AnyObject){
@@ -167,4 +170,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         NSUserDefaults.standardUserDefaults().synchronize();
         self.performSegueWithIdentifier("goto_login", sender: self)
 }
+   
 }
+    
+

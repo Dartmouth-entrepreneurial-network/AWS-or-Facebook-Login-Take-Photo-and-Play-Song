@@ -70,7 +70,7 @@ class LoginVC: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     
-    @IBAction func signinTapped(sender: AnyObject) {
+    @IBAction func LoginTapped(sender: AnyObject) {
         let userEmail = txtEmail.text;
         let userPassword = txtPassword.text;
         
@@ -98,15 +98,4 @@ class LoginVC: UIViewController, FBSDKLoginButtonDelegate {
         //}
 
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

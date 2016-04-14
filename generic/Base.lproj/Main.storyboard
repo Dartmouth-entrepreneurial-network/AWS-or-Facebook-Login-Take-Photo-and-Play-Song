@@ -24,16 +24,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juf-ft-P7y">
-                                <rect key="frame" x="117" y="412" width="86" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Log out">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="logoutTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eZ8-W3-tNW"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAq-of-jaa">
                                 <rect key="frame" x="20" y="193" width="280" height="21"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -44,13 +34,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bM9-dn-PWk">
                                 <rect key="frame" x="41" y="216" width="240" height="128"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSq-65-q44">
-                                <rect key="frame" x="125" y="352" width="71" height="30"/>
-                                <state key="normal" title="Get Image"/>
-                                <connections>
-                                    <action selector="captureImage" destination="BYZ-38-t0r" eventType="touchUpInside" id="FzS-Yl-pK0"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdo-f1-z1D">
                                 <rect key="frame" x="1" y="87" width="126" height="72"/>
                                 <state key="normal" title="Button" image="ic_play_arrow_3x.png"/>
@@ -77,6 +60,30 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSq-65-q44">
+                                <rect key="frame" x="43" y="352" width="71" height="30"/>
+                                <state key="normal" title="Get Image"/>
+                                <connections>
+                                    <action selector="captureImage" destination="BYZ-38-t0r" eventType="touchUpInside" id="FzS-Yl-pK0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hf5-Ic-iYu">
+                                <rect key="frame" x="243" y="366" width="40" height="30"/>
+                                <state key="normal" title="Video"/>
+                                <connections>
+                                    <segue destination="dQM-va-IdG" kind="modal" id="AsI-zn-rh7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYm-Od-ybw">
+                                <rect key="frame" x="138" y="437" width="69" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Log out">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vfp-SL-pwa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -91,6 +98,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="429" y="14"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="qJY-3U-lsx">
+            <objects>
+                <viewController id="dQM-va-IdG" customClass="VideoViewController" customModule="generic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wKu-u9-tJf"/>
+                        <viewControllerLayoutGuide type="bottom" id="5eE-vR-olc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cpE-w6-Swz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWp-cn-q6R">
+                                <rect key="frame" x="79" y="75" width="41" height="30"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <action selector="Hometapped:" destination="dQM-va-IdG" eventType="touchUpInside" id="nPx-xH-VT4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pqO-Yc-mgG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zmd-le-HIK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="235" y="747"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="cVQ-Lh-VpW">
@@ -120,7 +155,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Sign up now"/>
                                 <connections>
-                                    <segue destination="obK-v3-7qH" kind="modal" identifier="goto_signup" id="cKc-nr-hqh"/>
+                                    <segue destination="obK-v3-7qH" kind="modal" id="rwF-5b-Bre"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bML-e0-OE6">
@@ -129,7 +164,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Log in"/>
                                 <connections>
-                                    <action selector="signinTapped:" destination="0pF-Gl-NtH" eventType="touchUpInside" id="a3x-ZZ-j1w"/>
+                                    <action selector="LoginTapped:" destination="0pF-Gl-NtH" eventType="touchUpInside" id="acG-vs-Jqz"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="generic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpc-W0-BTe">
@@ -158,7 +193,6 @@
                             <constraint firstItem="Cpc-W0-BTe" firstAttribute="top" secondItem="HBv-Za-veG" secondAttribute="bottom" constant="17" id="gOS-6w-flW"/>
                             <constraint firstItem="WTM-sq-LZD" firstAttribute="top" secondItem="bML-e0-OE6" secondAttribute="bottom" constant="8" symbolic="YES" id="lbL-mx-v3R"/>
                             <constraint firstItem="bML-e0-OE6" firstAttribute="leading" secondItem="HCV-aV-S7P" secondAttribute="leadingMargin" constant="90" id="sp9-bV-kMs"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="79o-WT-JQl" secondAttribute="leading" id="vEO-TK-0kn"/>
                             <constraint firstItem="79o-WT-JQl" firstAttribute="leading" secondItem="HCV-aV-S7P" secondAttribute="leadingMargin" constant="5" id="yEF-h2-22l"/>
                         </constraints>
                     </view>
@@ -274,7 +308,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AtK-g3-Ncf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="54.399999999999999" y="14.199999999999999"/>
+            <point key="canvasLocation" x="-78" y="-14"/>
         </scene>
     </scenes>
     <resources>
