@@ -18,8 +18,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     var nowPlaying = false
     var timer:NSTimer!
     
-    
-    
     var imageFromSource = UIImagePickerController()
     @IBOutlet var imageView : UIImageView!
     @IBAction func captureImage(){
