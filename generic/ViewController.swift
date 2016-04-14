@@ -4,13 +4,22 @@
 //
 //  Created by Randall Reynolds on 2/27/16.
 //  Copyright © 2016 Randall Andrew Sam Sam. All rights reserved.
-//
+
+///Users/samuelputnam/Documents/Folder/songs/calm.mp3
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     var helloButton: UIButton = UIButton (frame: CGRect(x: 0, y: 0, width: 300, height: 35))
     var helloButton2: UIButton = UIButton (frame: CGRect(x: 0, y: 0, width: 300, height: 35))
+    
+    var Player = AVAudioPlayer()
+    var nowPlaying = false
+    var timer:NSTimer!
+    
+    
+    
     var imageFromSource = UIImagePickerController()
     @IBOutlet var imageView : UIImageView!
     @IBAction func captureImage(){
@@ -86,8 +95,49 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var loginButton: FBSDKLoginButton!
     
+    @IBAction func pauseAction(sender: AnyObject){
+        if nowPlaying {
+            Player.pause()
+            nowPlaying = false
+        }
+        }
+    
+    @IBOutlet weak var timeLabel: UILabel!
+    
+    let musicPath = NSBundle.mainBundle().pathForResource("calm", ofType: "mp3")
+  
+    
+    @IBAction func playAction(sender: AnyObject){
+   
+        
+        if !nowPlaying{
+                Player.play()
+                nowPlaying = true
+                 timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "displayCurrentTime", userInfo: nil, repeats: true)
+                
+            }
+            
+        }
+       
+
+    func displayCurrentTime() {
+        var elapsedTime = Int(Player.currentTime)
+        var minutes = elapsedTime/60
+        var seconds = elapsedTime  - (minutes * 60)
+        timeLabel.text = NSString(format: "%02d:%02d", minutes,seconds) as String
+    }
+ 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+         let url = NSURL(fileURLWithPath: musicPath!)
+        do{
+            Player = try AVAudioPlayer(contentsOfURL: url)
+        }
+        catch{
+        }
+        
         helloButton.setTitle("An AlertView button", forState:UIControlState.Normal)
         helloButton.backgroundColor = UIColorFromRGB(0x007AFF)
         helloButton.addTarget(self, action: "showMessage", forControlEvents: UIControlEvents.TouchUpInside)
@@ -98,6 +148,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         helloButton2.addTarget(self, action: "showAlertController", forControlEvents: UIControlEvents.TouchUpInside)
         helloButton2.center = CGPointMake(185, 550)
         view.addSubview(helloButton2)
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

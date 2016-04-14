@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A958A8CC1CB1746E00488158 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A958A8CB1CB1746E00488158 /* Default-568h@2x.png */; };
+		A961B1DC1CBF3CE700009F67 /* calm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A961B1DB1CBF3CE700009F67 /* calm.mp3 */; };
+		A961B1DE1CBF3F9000009F67 /* ic_play_arrow_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A961B1DD1CBF3F9000009F67 /* ic_play_arrow_3x.png */; };
+		A961B1E01CBF3F9900009F67 /* ic_pause_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A961B1DF1CBF3F9900009F67 /* ic_pause_3x.png */; };
 		A9688DD01CB191EF00B36367 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9688DCF1CB191EF00B36367 /* AppDelegate.swift */; };
 		A9720E461C99F66E00049DC9 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A9720E451C99F66E00049DC9 /* libsqlite3.tbd */; };
 		A9720E481C99F67600049DC9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A9720E471C99F67600049DC9 /* libz.tbd */; };
@@ -42,6 +45,10 @@
 
 /* Begin PBXFileReference section */
 		A958A8CB1CB1746E00488158 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A961B1DA1CBF3CD700009F67 /* 02 Scary Monsters and Nice Sprites.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "02 Scary Monsters and Nice Sprites.m4a"; path = "../../../../../../Music/iTunes/iTunes Media/Music/Skrillex/Scary Monsters and Nice Sprites/02 Scary Monsters and Nice Sprites.m4a"; sourceTree = "<group>"; };
+		A961B1DB1CBF3CE700009F67 /* calm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = calm.mp3; path = ../../../../../../Documents/Folder/songs/calm.mp3; sourceTree = "<group>"; };
+		A961B1DD1CBF3F9000009F67 /* ic_play_arrow_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_play_arrow_3x.png; path = ../../../../../../Downloads/ic_play_arrow_black_24dp/ios/ic_play_arrow.imageset/ic_play_arrow_3x.png; sourceTree = "<group>"; };
+		A961B1DF1CBF3F9900009F67 /* ic_pause_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_pause_3x.png; path = ../../../../../../Downloads/ic_pause_black_24dp/ios/ic_pause.imageset/ic_pause_3x.png; sourceTree = "<group>"; };
 		A9688DCF1CB191EF00B36367 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		A9720E451C99F66E00049DC9 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		A9720E471C99F67600049DC9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -119,7 +126,11 @@
 			isa = PBXGroup;
 			children = (
 				A958A8CB1CB1746E00488158 /* Default-568h@2x.png */,
+				A961B1DA1CBF3CD700009F67 /* 02 Scary Monsters and Nice Sprites.m4a */,
+				A961B1DB1CBF3CE700009F67 /* calm.mp3 */,
 				A9720E4B1C99F6B700049DC9 /* generic-Bridging-Header.h */,
+				A961B1DD1CBF3F9000009F67 /* ic_play_arrow_3x.png */,
+				A961B1DF1CBF3F9900009F67 /* ic_pause_3x.png */,
 				FE0F0D2E1C8270C900C8DC0B /* generic */,
 				FE0F0D431C8270CA00C8DC0B /* genericTests */,
 				FE0F0D4E1C8270CA00C8DC0B /* genericUITests */,
@@ -281,8 +292,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE0F0D3A1C8270C900C8DC0B /* LaunchScreen.storyboard in Resources */,
+				A961B1DC1CBF3CE700009F67 /* calm.mp3 in Resources */,
 				A958A8CC1CB1746E00488158 /* Default-568h@2x.png in Resources */,
+				A961B1E01CBF3F9900009F67 /* ic_pause_3x.png in Resources */,
 				FE0F0D371C8270C900C8DC0B /* Assets.xcassets in Resources */,
+				A961B1DE1CBF3F9000009F67 /* ic_play_arrow_3x.png in Resources */,
 				FE0F0D351C8270C900C8DC0B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -36,7 +36,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAq-of-jaa">
                                 <rect key="frame" x="20" y="193" width="280" height="21"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -51,12 +51,39 @@
                                     <action selector="captureImage" destination="BYZ-38-t0r" eventType="touchUpInside" id="FzS-Yl-pK0"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdo-f1-z1D">
+                                <rect key="frame" x="1" y="87" width="126" height="72"/>
+                                <state key="normal" title="Button" image="ic_play_arrow_3x.png"/>
+                                <connections>
+                                    <action selector="playAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jes-YA-r0w"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDA-3u-Qso">
+                                <rect key="frame" x="43" y="146" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5E7-jY-AQo">
+                                <rect key="frame" x="235" y="146" width="60" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEf-tO-Bnx">
+                                <rect key="frame" x="212" y="79" width="126" height="72"/>
+                                <state key="normal" title="Button" image="ic_pause_3x.png"/>
+                                <connections>
+                                    <action selector="pauseAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w8S-OO-sL9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="CyB-SS-Pwl"/>
                     <connections>
                         <outlet property="ImageView" destination="bM9-dn-PWk" id="W7N-jB-eNX"/>
+                        <outlet property="timeLabel" destination="5E7-jY-AQo" id="xTD-wk-de8"/>
                         <outlet property="usernameLabel" destination="eAq-of-jaa" id="Czp-hO-P9a"/>
                         <segue destination="0pF-Gl-NtH" kind="modal" identifier="goto_login" id="ejj-ZC-QyX"/>
                     </connections>
@@ -250,4 +277,8 @@
             <point key="canvasLocation" x="54.399999999999999" y="14.199999999999999"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_pause_3x.png" width="72" height="72"/>
+        <image name="ic_play_arrow_3x.png" width="72" height="72"/>
+    </resources>
 </document>
