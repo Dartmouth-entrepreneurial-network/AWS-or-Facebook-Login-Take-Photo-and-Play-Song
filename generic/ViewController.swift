@@ -9,7 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-    var helloButton: UIButton = UIButton (frame: CGRect(x: 0, y: 0, width: 100, height: 25))
+    var helloButton: UIButton = UIButton (frame: CGRect(x: 0, y: 0, width: 300, height: 35))
+    var helloButton2: UIButton = UIButton (frame: CGRect(x: 0, y: 0, width: 300, height: 35))
     var imageFromSource = UIImagePickerController()
     @IBOutlet var imageView : UIImageView!
     @IBAction func captureImage(){
@@ -51,16 +52,50 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         alert.addButtonWithTitle("OK")
         alert.show()
     }
+    func UIColorFromRGB(rgbValue: UInt) -> UIColor {
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
+    }
+    func showAlertController() {
+        
+        let title = "Hello World!"
+        //Localized strings can be used with alertview too of course
+        let message = NSLocalizedString("Are you doing well?", comment: "Yes")
+        let cancelButtonTitle = NSLocalizedString("No", comment: "")
+        let otherButtonTitle = NSLocalizedString("Yes", comment: "")
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+        let cancelAction = UIAlertAction(title: cancelButtonTitle, style: .Cancel){action in
+            NSLog("User not doing well today")
+    }
+        let otherAction = UIAlertAction(title: otherButtonTitle, style: .Default){action in
+            NSLog("User feeling good")
+    }
+    
+    alertController.addAction(cancelAction)
+    alertController.addAction(otherAction)
+    presentViewController(alertController, animated: true, completion: nil)
+    
+}
+
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var loginButton: FBSDKLoginButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        helloButton.setTitle("A button", forState:UIControlState.Normal)
-        helloButton.backgroundColor = UIColor.blueColor()
+        helloButton.setTitle("An AlertView button", forState:UIControlState.Normal)
+        helloButton.backgroundColor = UIColorFromRGB(0x007AFF)
         helloButton.addTarget(self, action: "showMessage", forControlEvents: UIControlEvents.TouchUpInside)
-        helloButton.center = CGPointMake(160, 300)
+        helloButton.center = CGPointMake(185, 500)
         view.addSubview(helloButton)
+        helloButton2.setTitle("An AlertController button", forState:UIControlState.Normal)
+        helloButton2.backgroundColor = UIColorFromRGB(0x007AFF)
+        helloButton2.addTarget(self, action: "showAlertController", forControlEvents: UIControlEvents.TouchUpInside)
+        helloButton2.center = CGPointMake(185, 550)
+        view.addSubview(helloButton2)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
