@@ -10,6 +10,8 @@ Xcode: Version 7.2.1 (7C1002)
 
 iOS Simulator: iPhone 6
 
+Hardware: iPhone 6
+
 USEast (N. Virginia) region
 
 pod install
