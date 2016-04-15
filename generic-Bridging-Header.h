@@ -3,7 +3,7 @@
 //  generic
 //
 //  Created by Samuel Putnam on 3/16/16.
-//  Copyright © 2016 Randall Andrew Sam Sam. All rights reserved.
+//  Copyright © 2016 Randall Sam Sam. All rights reserved.
 //
 
 #import <AWSCore/AWSCore.h>

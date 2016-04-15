@@ -3,7 +3,7 @@
 //  generic
 //
 //  Created by Samuel Putnam on 4/14/16.
-//  Copyright © 2016 Randall Andrew Sam Sam. All rights reserved.
+//  Copyright © 2016 Randall Sam Sam. All rights reserved.
 //
 
 import MediaPlayer

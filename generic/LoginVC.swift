@@ -3,7 +3,7 @@
 //  generic
 //
 //  Created by Randall Reynolds on 3/1/16.
-//  Copyright © 2016 Randall Andrew Sam Sam. All rights reserved.
+//  Copyright © 2016 Randall Sam Sam. All rights reserved.
 //
 
 import UIKit
@@ -30,17 +30,17 @@ class LoginVC: UIViewController, FBSDKLoginButtonDelegate {
         {
         print("nil")
         }
-        print("here")
+    
         let loginButton : FBSDKLoginButton = FBSDKLoginButton()
-        print("here")
+
             self.view.addSubview(loginButton)
-        print("here")
+
             loginButton.center = self.view.center
-        print("here")
+
             loginButton.readPermissions = ["public_profile", "email", "user_friends"]
-        print("here")
+
             loginButton.delegate = self
-        print("here")
+
     }
     
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
