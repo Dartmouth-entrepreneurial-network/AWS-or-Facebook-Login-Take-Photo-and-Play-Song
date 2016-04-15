@@ -1,7 +1,7 @@
 # generic
 Generic app login
 
-This is a generic Swift 2.2 app that stores a user email and password on an AWS Cognito backend at sign up and upon attempted login verifies that the user email and password entered exist in the database before logging the user in.
+This is a generic Swift 2.2 app that stores a user email and password on an AWS Cognito backend at sign up and upon attempted login verifies that the user email and password entered exist in the database before logging the user in. Or, the user can log in with Facebook. A song can be played and a profile image can be taken from the camera.
 
 The app is confirmed functional for these specifications:
 
