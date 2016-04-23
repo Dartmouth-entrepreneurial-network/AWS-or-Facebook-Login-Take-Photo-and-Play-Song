@@ -22,10 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         //AWS default service configuration
         let credentialsProvider = AWSCognitoCredentialsProvider(regionType: AWSRegionType.USEast1, identityPoolId: "us-east-1:8ba306b8-9edb-441b-881b-3be159e82a44")
-        //other parameters that may be added into AWSCognitoCredentialsProvider
-        //accountId: "098342329016"
-        //unauthRoleArn: "arn:aws:iam::098342329016:role/Cognito_MatchupUnauth_Role", authRoleArn: "arn:aws:iam:098342329016:role/Cognito_MatchupAuth_Role"
-        
+        //removed AIM values
         let defaultServiceConfiguration = AWSServiceConfiguration(
             region: AWSRegionType.USEast1, credentialsProvider: credentialsProvider)
         
