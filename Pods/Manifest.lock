@@ -1,7 +1,7 @@
 PODS:
-  - AWSCognito (2.3.6):
-    - AWSCore (= 2.3.6)
-  - AWSCore (2.3.6)
+  - AWSCognito (2.4.0):
+    - AWSCore (= 2.4.0)
+  - AWSCore (2.4.0)
   - Bolts (1.7.0):
     - Bolts/AppLinks (= 1.7.0)
     - Bolts/Tasks (= 1.7.0)
@@ -21,8 +21,8 @@ DEPENDENCIES:
   - FBSDKLoginKit
 
 SPEC CHECKSUMS:
-  AWSCognito: af54fe65171c7c994c134e5d29b1ee60ee234825
-  AWSCore: 917d84b32974136194a905b98c0ae25c9f3350b8
+  AWSCognito: 1d96bd3ccda48918b00862895561dcb2a6080acf
+  AWSCore: 7e0da755786280a76ed4ab4ed8c1d38ced09b460
   Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
   FBSDKCoreKit: 686ac982723a14ec9ddb85e2f81235d7706c891b
   FBSDKLoginKit: bade9fc78277764149ccc5bfaadbf13c83175c6a

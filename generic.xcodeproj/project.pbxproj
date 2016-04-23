@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A961B1DE1CBF3F9000009F67 /* ic_play_arrow_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A961B1DD1CBF3F9000009F67 /* ic_play_arrow_3x.png */; };
-		A961B1E01CBF3F9900009F67 /* ic_pause_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A961B1DF1CBF3F9900009F67 /* ic_pause_3x.png */; };
 		A9688DD01CB191EF00B36367 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9688DCF1CB191EF00B36367 /* AppDelegate.swift */; };
 		A9720E461C99F66E00049DC9 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A9720E451C99F66E00049DC9 /* libsqlite3.tbd */; };
 		A9720E481C99F67600049DC9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A9720E471C99F67600049DC9 /* libz.tbd */; };
 		A9720E4A1C99F68300049DC9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9720E491C99F68300049DC9 /* SystemConfiguration.framework */; };
-		A9FFE0FE1CC1822E00259146 /* Concrete Schoolyard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A9FFE0FD1CC1822E00259146 /* Concrete Schoolyard.mp3 */; };
-		A9FFE1061CC1AD2200259146 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9FFE1051CC1AD2200259146 /* Default-568h@2x.png */; };
+		A9D25C3B1CCBEDEC0042A093 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D25C3A1CCBEDEC0042A093 /* Default-568h@2x.png */; };
+		A9D25C3E1CCBEE070042A093 /* ic_pause_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D25C3C1CCBEE070042A093 /* ic_pause_3x.png */; };
+		A9D25C3F1CCBEE070042A093 /* ic_play_arrow_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D25C3D1CCBEE070042A093 /* ic_play_arrow_3x.png */; };
 		E4E85B9270D3ECF6FC664B27 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA488F4C3918F16364E9392B /* libPods.a */; };
 		FE0F0D321C8270C900C8DC0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0F0D311C8270C900C8DC0B /* ViewController.swift */; };
 		FE0F0D351C8270C900C8DC0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE0F0D331C8270C900C8DC0B /* Main.storyboard */; };
@@ -43,16 +42,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A961B1DD1CBF3F9000009F67 /* ic_play_arrow_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_play_arrow_3x.png; path = ../../../../../../Downloads/ic_play_arrow_black_24dp/ios/ic_play_arrow.imageset/ic_play_arrow_3x.png; sourceTree = "<group>"; };
-		A961B1DF1CBF3F9900009F67 /* ic_pause_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_pause_3x.png; path = ../../../../../../Downloads/ic_pause_black_24dp/ios/ic_pause.imageset/ic_pause_3x.png; sourceTree = "<group>"; };
 		A9688DCF1CB191EF00B36367 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		A9720E451C99F66E00049DC9 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		A9720E471C99F67600049DC9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		A9720E491C99F68300049DC9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A9720E4B1C99F6B700049DC9 /* generic-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "generic-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		A9C51F6C3F1FD9E234347789 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		A9FFE0FD1CC1822E00259146 /* Concrete Schoolyard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Concrete Schoolyard.mp3"; path = "../../../../../../Music/iTunes/iTunes Media/Music/Jurassic 5/J 5 (Deluxe Edition)/Concrete Schoolyard.mp3"; sourceTree = "<group>"; };
-		A9FFE1051CC1AD2200259146 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../../../../../.Trash/Brand Assets.launchimage/Default-568h@2x.png"; sourceTree = "<group>"; };
+		A9D25C391CCBECE30042A093 /* Concrete Schoolyard.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Concrete Schoolyard.m4a"; path = "../../../../../Music/iTunes/iTunes Media/Music/Jurassic 5/J 5 (Deluxe Edition)/Concrete Schoolyard.m4a"; sourceTree = "<group>"; };
+		A9D25C3A1CCBEDEC0042A093 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A9D25C3C1CCBEE070042A093 /* ic_pause_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_pause_3x.png; sourceTree = "<group>"; };
+		A9D25C3D1CCBEE070042A093 /* ic_play_arrow_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_play_arrow_3x.png; sourceTree = "<group>"; };
 		B30F0EF7AB2DE63EE3009FC0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BA488F4C3918F16364E9392B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE0F0D2C1C8270C900C8DC0B /* generic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = generic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,10 +121,10 @@
 		FE0F0D231C8270C800C8DC0B = {
 			isa = PBXGroup;
 			children = (
-				A9FFE0FD1CC1822E00259146 /* Concrete Schoolyard.mp3 */,
-				A961B1DD1CBF3F9000009F67 /* ic_play_arrow_3x.png */,
-				A961B1DF1CBF3F9900009F67 /* ic_pause_3x.png */,
-				A9FFE1051CC1AD2200259146 /* Default-568h@2x.png */,
+				A9D25C391CCBECE30042A093 /* Concrete Schoolyard.m4a */,
+				A9D25C3A1CCBEDEC0042A093 /* Default-568h@2x.png */,
+				A9D25C3C1CCBEE070042A093 /* ic_pause_3x.png */,
+				A9D25C3D1CCBEE070042A093 /* ic_play_arrow_3x.png */,
 				FE0F0D2E1C8270C900C8DC0B /* generic */,
 				FE0F0D431C8270CA00C8DC0B /* genericTests */,
 				FE0F0D4E1C8270CA00C8DC0B /* genericUITests */,
@@ -286,12 +285,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9FFE0FE1CC1822E00259146 /* Concrete Schoolyard.mp3 in Resources */,
-				A961B1E01CBF3F9900009F67 /* ic_pause_3x.png in Resources */,
 				FE0F0D371C8270C900C8DC0B /* Assets.xcassets in Resources */,
-				A961B1DE1CBF3F9000009F67 /* ic_play_arrow_3x.png in Resources */,
+				A9D25C3E1CCBEE070042A093 /* ic_pause_3x.png in Resources */,
+				A9D25C3F1CCBEE070042A093 /* ic_play_arrow_3x.png in Resources */,
 				FE0F0D351C8270C900C8DC0B /* Main.storyboard in Resources */,
-				A9FFE1061CC1AD2200259146 /* Default-568h@2x.png in Resources */,
+				A9D25C3B1CCBEDEC0042A093 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
