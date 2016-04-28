@@ -5,9 +5,9 @@
 //  Created by Randall Reynolds on 2/27/16.
 //  Copyright © 2016 Randall Sam Sam. All rights reserved.
 //
-//import AWSCore
+
 import UIKit
-//import FBSDKCoreKit
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
