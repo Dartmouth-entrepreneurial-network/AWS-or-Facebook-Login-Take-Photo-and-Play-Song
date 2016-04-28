@@ -8,20 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		487A138E8D8837B277B55ED4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 675225F78BEBE890E346EE52 /* libPods.a */; };
-		A9688DD01CB191EF00B36367 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9688DCF1CB191EF00B36367 /* AppDelegate.swift */; };
 		A9720E461C99F66E00049DC9 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A9720E451C99F66E00049DC9 /* libsqlite3.tbd */; };
 		A9720E481C99F67600049DC9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A9720E471C99F67600049DC9 /* libz.tbd */; };
 		A9720E4A1C99F68300049DC9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9720E491C99F68300049DC9 /* SystemConfiguration.framework */; };
 		A9C6B4F71CD188E700C263FD /* ic_play_arrow_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9C6B4F61CD188E700C263FD /* ic_play_arrow_2x.png */; };
 		A9C6B4F91CD1890300C263FD /* ic_pause_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9C6B4F81CD1890300C263FD /* ic_pause_2x.png */; };
 		A9D25C3B1CCBEDEC0042A093 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D25C3A1CCBEDEC0042A093 /* Default-568h@2x.png */; };
-		FE0F0D321C8270C900C8DC0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0F0D311C8270C900C8DC0B /* ViewController.swift */; };
 		FE0F0D351C8270C900C8DC0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE0F0D331C8270C900C8DC0B /* Main.storyboard */; };
 		FE0F0D371C8270C900C8DC0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0F0D361C8270C900C8DC0B /* Assets.xcassets */; };
 		FE0F0D451C8270CA00C8DC0B /* genericTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0F0D441C8270CA00C8DC0B /* genericTests.swift */; };
 		FE0F0D501C8270CA00C8DC0B /* genericUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0F0D4F1C8270CA00C8DC0B /* genericUITests.swift */; };
-		FE0F0D601C827DE800C8DC0B /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0F0D5F1C827DE800C8DC0B /* SignupVC.swift */; };
-		FE599BF41C86753D00397DB0 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE599BF31C86753D00397DB0 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -244,7 +240,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = "Randall Andrew Sam Sam";
+				ORGANIZATIONNAME = LoveinTouch;
 				TargetAttributes = {
 					FE0F0D2B1C8270C800C8DC0B = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -362,10 +358,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9688DD01CB191EF00B36367 /* AppDelegate.swift in Sources */,
-				FE0F0D601C827DE800C8DC0B /* SignupVC.swift in Sources */,
-				FE0F0D321C8270C900C8DC0B /* ViewController.swift in Sources */,
-				FE599BF41C86753D00397DB0 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +448,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Debug;
 		};
@@ -494,8 +487,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Release;
 		};
@@ -517,7 +512,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/generic/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = rass.generic;
+				PRODUCT_BUNDLE_IDENTIFIER = loveintouch.generic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "generic-Bridging-Header.h";
@@ -543,7 +538,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/generic/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = rass.generic;
+				PRODUCT_BUNDLE_IDENTIFIER = loveintouch.generic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "generic-Bridging-Header.h";
