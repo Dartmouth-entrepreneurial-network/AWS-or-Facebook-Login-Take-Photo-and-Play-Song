@@ -9,6 +9,7 @@
 //import AWSCore
 import UIKit
 
+
 class SignupVC: UIViewController {
     
     @IBOutlet weak var txtEmail: UITextField!
