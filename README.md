@@ -6,3 +6,5 @@ This is a generic Swift 2.2 app. There are 2 ways to log in. A user email and pa
 
 <img src="http://i.imgur.com/Im0CJEX.png" width="100">
 <img src="http://i.imgur.com/x6c76BT.png" width="100">
+
+<img src="http://i.imgur.com/tXWtplh.gif" width="300">
